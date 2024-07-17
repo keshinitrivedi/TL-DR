@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Too Long; Didn't Read</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+  </head>
+  <body>
+    <h1>Welcome to TL;DR!</h1>
+    <p><b>TL;DR</b> is an AI Text Summarizer Application. It leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts.
+    <br>Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, this app can assist you.
+    <br>Simply paste your text into the text area below and click the <b>"Summarize"</b> button ;) </p>
+    <div class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+        <button id="submit-button" class="submit-button">
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div><br>
+      <div class="text-box"> 
+      <textarea readonly id="summary" name="summarized_text" placeholder="Summarized text will appear here"></textarea>
+        <button id="copy-button" class="copy-button">
+          <span class="copy-button-text">Copy</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
